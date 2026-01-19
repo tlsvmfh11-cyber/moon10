@@ -3,6 +3,7 @@ import Footer from './components/layout/Footer';
 import Hero from './components/sections/Hero';
 import Intro from './components/sections/Intro';
 import FAQ from './components/sections/FAQ';
+import Structure from './components/sections/Structure';
 import System from './components/sections/System';
 import Pricing from './components/sections/Pricing';
 import Reviews from './components/sections/Reviews';
@@ -17,13 +18,13 @@ function App() {
     <div className="bg-guide-bg min-h-screen text-guide-text font-sans selection:bg-guide-accent selection:text-black">
       <Navbar />
 
-      <main>
-        <Hero />
-        <Intro />
-        <FAQ />
-        <System />
-        <Pricing />
-        <Reviews />
+              <main>
+                <Hero />
+                <Intro />
+                <FAQ />
+                <Structure />
+                <System />
+                <Pricing />        <Reviews />
         <Contact />
       </main>
 
