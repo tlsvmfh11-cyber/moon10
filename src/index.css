@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'S-CoreDream';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'S-CoreDream';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'S-CoreDream';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'S-CoreDream';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'S-CoreDream';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  /* Guidebook Theme (Soft & Trustworthy) */
+  --color-guide-bg: #0f172a;      /* Slate 900 */
+  --color-guide-card: #1e293b;    /* Slate 800 */
+  --color-guide-text: #e2e8f0;    /* Slate 200 */
+  --color-guide-accent: #38bdf8;  /* Sky 400 */
+  --color-guide-highlight: #f472b6; /* Pink 400 (Soft highlight) */
+  
+  --font-sans: 'S-CoreDream', sans-serif;
+
+  --animate-fade-in: fadeIn 1s ease-out forwards;
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-guide-bg);
+  }
+  
+  body {
+    @apply text-guide-text antialiased overflow-x-hidden font-sans;
+    background-color: var(--color-guide-bg);
+  }
+
+  h1, h2, h3 {
+    @apply font-bold text-white;
+  }
+
+  ::selection {
+    background-color: var(--color-guide-accent);
+    color: black;
+  }
+}
